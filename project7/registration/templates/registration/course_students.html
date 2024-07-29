@@ -1,0 +1,7 @@
+<!-- registration/templates/registration/course_students.html -->
+<h2>Students registered in {{ course.name }}</h2>
+<ul>
+    {% for enrollment in students %}
+        <li>{{ enrollment.student.first_name }} {{ enrollment.student.last_name }}</li>
+    {% endfor %}
+</ul>
